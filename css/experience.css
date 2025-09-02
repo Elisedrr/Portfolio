@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #fff;
+}
+
+
+.pao-background-beige {
+  background-color: #f3ece2;
+  padding: 70px 20px 60px 20px;
+}
+
+.pao-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pao-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 60px;
+  margin-top: 50px; 
+  color: #b58543;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.pao-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  align-items: center;
+  justify-items: center;
+}
+
+.pao-item,
+.pao-item-b {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.pao-item:hover,
+.pao-item-b:hover {
+  transform: scale(1.05);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.intro-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.intro-content {
+    display: grid;
+    grid-template-columns: 100px 1fr 300px;
+    gap: 40px;
+    align-items: start;
+}
+
+.company-logo img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.intro-text {
+    text-align: center;  
+    max-width: 800px;     
+    margin: 0 auto;      
+}
+
+.intro-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.intro-text p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro-text a:hover {
+    text-decoration: underline;
+}
+
+
+.mission-section {
+    padding: 80px 0;
+}
+
+.mission-section:nth-child(even) {
+    background: #F9F2EB;
+}
+
+.mission-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.mission-item.reverse {
+    grid-template-columns: 1fr 1fr;
+}
+
+.mission-item.reverse .mission-content {
+    order: 2;
+}
+
+.mission-item.reverse .mission-image {
+    order: 1;
+}
+
+/* ===== CONTENU DES MISSIONS ===== */
+.mission-content {
+    padding: 20px 0;
+}
+
+.mission-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #b58543;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.mission-content h3 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.mission-content p {
+    margin-bottom: 15px;
+    text-align: justify;
+    color: #555;
+    line-height: 1.7;
+}
+
+.mission-image img {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.image-stack {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px;             
+    align-items: center;   
+}
+
+.image-stack img {
+    width: 80%;
+    max-width: 500px;      
+    height: auto;          
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.image-stack img:hover {
+    transform: scale(1.05);
+}
+
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid img:first-child {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 150px;
+}
+
+.image-grid img:nth-child(2) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 150px;
+}
+
+.image-grid img:nth-child(3) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    height: 180px;
+}
+
+.image-grid img:nth-child(4) {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    height: 160px;
+}
+
+.image-grid img:nth-child(5) {
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    height: 160px;
+}
+
+.image-grid-small {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.image-grid-small img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.image-grid-small img:last-child {
+    grid-column: 1 / 3;
+    height: 200px;
+}
+
+@media (max-width: 992px) {
+    .intro-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .mission-item,
+    .mission-item.reverse {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .mission-item.reverse .mission-content,
+    .mission-item.reverse .mission-image {
+        order: unset;
+    }
+    
+    .mission-number {
+        font-size: 2.5rem;
+    }
+    
+    .mission-content h3 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .intro-section,
+    .mission-section {
+        padding: 50px 0;
+    }
+    
+    .image-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-grid img {
+        height: 180px;
+    }
+    
+    .image-grid-small {
+        grid-template-columns: 1fr;
+    }
+    
+    .image-grid-small img:last-child {
+        grid-column: 1;
+    }
+    
+    .image-stack img {
+        max-width: 100%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-number {
+        font-size: 2rem;
+    }
+    
+    .mission-content h3 {
+        font-size: 1.3rem;
+    }
+    
+    .intro-text h2 {
+        font-size: 1.5rem;
+    }
+}
+
+.autres-projets-section {
+  padding: 80px 20px;
+  background-color: #F9F2EB;
+  text-align: center;
+}
+
+.autres-projets-title {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.autres-projets-description {
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.autres-projets-link-container {
+  margin-bottom: 30px;
+}
+
+.autres-projets-link-text {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.photographie-link {
+  text-decoration: none;
+  background: #b58543;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: background 0.3s ease;
+}
+
+.photographie-link:hover {
+  background: #a06f34;
+}
+
+.autres-projets-gallery {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.autres-projets-image {
+  width: 240px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.autres-projets-image:hover {
+  transform: translateY(-5px);
+}

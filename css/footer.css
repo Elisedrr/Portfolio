@@ -1,0 +1,27 @@
+.contact-section {
+    background: #927150; 
+    padding: 60px 20px;
+    color: #f0f0e8;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
